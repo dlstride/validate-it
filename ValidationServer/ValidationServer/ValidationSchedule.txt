@@ -1,0 +1,19 @@
+﻿#This file is used to schedule validators
+#The '#' character is used to add a comment to this file
+
+#ValidatorId - Id of Validator
+#ValidatorInstanceId - Specific Id of instance
+#CronTab Expression - for example: * * * * * runs every minute
+
+#Format for input is ValidatorId:ValidatorInstanceId:CronTab Expression
+
+#CRONTAB Builder
+#http://crontab.guru/examples.html
+
+BillingValidator:BillingValidator: * * * * *
+#RabbitMQValidator: RabbitMQValidator.pdppdrab001.Staging: * * * * *
+RabbitMQValidator:RabbitMQValidator.pdpriappd01.Development:* * * * *
+
+#SuccessValidator:SuccessValidator: * * * * *
+#WarningValidator:WarningValidator: * * * * *
+#ErrorValidator:ErrorValidator: * * * * *

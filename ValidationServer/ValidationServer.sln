@@ -1,0 +1,115 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationServer", "ValidationServer\ValidationServer.csproj", "{C423CFDF-E490-4DC1-AD23-5D9E220F7114}"
+	ProjectSection(ProjectDependencies) = postProject
+		{225907D7-A73B-45A2-996C-67CCA49E3D93} = {225907D7-A73B-45A2-996C-67CCA49E3D93}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationServer.Data", "ValidationServer.Data\ValidationServer.Data.csproj", "{225907D7-A73B-45A2-996C-67CCA49E3D93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillingValidator", "BillingValidator\BillingValidator.csproj", "{E71F38BC-DBF0-4B69-9111-65D65F8175A2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{225907D7-A73B-45A2-996C-67CCA49E3D93} = {225907D7-A73B-45A2-996C-67CCA49E3D93}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{050CDF4B-05D7-4250-81D4-E57F552AB317}"
+	ProjectSection(SolutionItems) = preProject
+		packages\PDCoreLib.4.1.0.1\VasaConfigFile.csd.xsd = packages\PDCoreLib.4.1.0.1\VasaConfigFile.csd.xsd
+		packages\PDCoreLib.4.1.0.2\VasaConfigFile.csd.xsd = packages\PDCoreLib.4.1.0.2\VasaConfigFile.csd.xsd
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationServerTests", "ValidationServerTests\ValidationServerTests.csproj", "{D071C747-E09F-4800-8EE9-BA4C788A2D61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillingValidatorTests", "BillingValidatorTests\BillingValidatorTests.csproj", "{F8D0ED19-6342-4C3C-A3D7-D75BC6636A64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{BE43A08D-2B4B-4145-B97F-12117BEFE4FD}"
+	ProjectSection(SolutionItems) = preProject
+		Build.proj = Build.proj
+		.build\MSBuild.Community.Tasks.dll = .build\MSBuild.Community.Tasks.dll
+		.build\MSBuild.Community.Tasks.targets = .build\MSBuild.Community.Tasks.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items (2)", "Solution Items (2)", "{9C93B459-4A64-4C5A-A7CD-81DD37BAE383}"
+	ProjectSection(SolutionItems) = preProject
+		globalassembly.cs = globalassembly.cs
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Validators", "Validators", "{B2A87E2C-2730-44CB-BF75-1CB0B82CD19C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQValidator", "RabbitMQValidator\RabbitMQValidator.csproj", "{DACE5344-908D-42CC-8BC0-8961F8546142}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQValidatorTests", "RabbitMQValidatorTests\RabbitMQValidatorTests.csproj", "{833A956D-DE52-45EF-9CBC-6DC474A27685}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuccessValidator", "SuccessValidator\SuccessValidator.csproj", "{5D59996C-7C44-46A9-9B3D-910B874D6D20}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QE Testing", "QE Testing", "{730B41E6-5EBA-492E-932D-E95493985014}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorValidator", "ErrorValidator\ErrorValidator.csproj", "{1E88C0A4-3C93-4000-B0F7-02ED7723D295}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarningValidator", "WarningValidator\WarningValidator.csproj", "{95BD9F1D-1273-465B-948C-D6CD7A564D6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C423CFDF-E490-4DC1-AD23-5D9E220F7114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C423CFDF-E490-4DC1-AD23-5D9E220F7114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C423CFDF-E490-4DC1-AD23-5D9E220F7114}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C423CFDF-E490-4DC1-AD23-5D9E220F7114}.Release|Any CPU.Build.0 = Release|Any CPU
+		{225907D7-A73B-45A2-996C-67CCA49E3D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{225907D7-A73B-45A2-996C-67CCA49E3D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{225907D7-A73B-45A2-996C-67CCA49E3D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{225907D7-A73B-45A2-996C-67CCA49E3D93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E71F38BC-DBF0-4B69-9111-65D65F8175A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E71F38BC-DBF0-4B69-9111-65D65F8175A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E71F38BC-DBF0-4B69-9111-65D65F8175A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E71F38BC-DBF0-4B69-9111-65D65F8175A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D071C747-E09F-4800-8EE9-BA4C788A2D61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D071C747-E09F-4800-8EE9-BA4C788A2D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D071C747-E09F-4800-8EE9-BA4C788A2D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D071C747-E09F-4800-8EE9-BA4C788A2D61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8D0ED19-6342-4C3C-A3D7-D75BC6636A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8D0ED19-6342-4C3C-A3D7-D75BC6636A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8D0ED19-6342-4C3C-A3D7-D75BC6636A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8D0ED19-6342-4C3C-A3D7-D75BC6636A64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DACE5344-908D-42CC-8BC0-8961F8546142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DACE5344-908D-42CC-8BC0-8961F8546142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DACE5344-908D-42CC-8BC0-8961F8546142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DACE5344-908D-42CC-8BC0-8961F8546142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{833A956D-DE52-45EF-9CBC-6DC474A27685}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{833A956D-DE52-45EF-9CBC-6DC474A27685}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{833A956D-DE52-45EF-9CBC-6DC474A27685}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{833A956D-DE52-45EF-9CBC-6DC474A27685}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D59996C-7C44-46A9-9B3D-910B874D6D20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D59996C-7C44-46A9-9B3D-910B874D6D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D59996C-7C44-46A9-9B3D-910B874D6D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D59996C-7C44-46A9-9B3D-910B874D6D20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E88C0A4-3C93-4000-B0F7-02ED7723D295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E88C0A4-3C93-4000-B0F7-02ED7723D295}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E88C0A4-3C93-4000-B0F7-02ED7723D295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E88C0A4-3C93-4000-B0F7-02ED7723D295}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95BD9F1D-1273-465B-948C-D6CD7A564D6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95BD9F1D-1273-465B-948C-D6CD7A564D6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95BD9F1D-1273-465B-948C-D6CD7A564D6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95BD9F1D-1273-465B-948C-D6CD7A564D6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E71F38BC-DBF0-4B69-9111-65D65F8175A2} = {B2A87E2C-2730-44CB-BF75-1CB0B82CD19C}
+		{F8D0ED19-6342-4C3C-A3D7-D75BC6636A64} = {B2A87E2C-2730-44CB-BF75-1CB0B82CD19C}
+		{DACE5344-908D-42CC-8BC0-8961F8546142} = {B2A87E2C-2730-44CB-BF75-1CB0B82CD19C}
+		{833A956D-DE52-45EF-9CBC-6DC474A27685} = {B2A87E2C-2730-44CB-BF75-1CB0B82CD19C}
+		{5D59996C-7C44-46A9-9B3D-910B874D6D20} = {730B41E6-5EBA-492E-932D-E95493985014}
+		{730B41E6-5EBA-492E-932D-E95493985014} = {B2A87E2C-2730-44CB-BF75-1CB0B82CD19C}
+		{1E88C0A4-3C93-4000-B0F7-02ED7723D295} = {730B41E6-5EBA-492E-932D-E95493985014}
+		{95BD9F1D-1273-465B-948C-D6CD7A564D6A} = {730B41E6-5EBA-492E-932D-E95493985014}
+	EndGlobalSection
+EndGlobal
